@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/spore/gdrive/picker/icons/spore-48.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function gisLoaded() {
+        if (window._gisNotify) window._gisNotify();
+      }
+
+      function gapiLoaded() {
+        if (window._gapiNotify) window._gapiNotify();
+      }
+    </script>
+    <title>Spore | Gdrive Picker</title>
+    <script type="module" crossorigin src="/spore/gdrive/picker/assets/index-M52Mgbnj.js"></script>
+    <link rel="stylesheet" crossorigin href="/spore/gdrive/picker/assets/index-DiwrgTda.css">
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+  </body>
+</html>
